@@ -1,50 +1,120 @@
-# Building a Remote MCP Server on Cloudflare (Without Auth)
+# ModGov MCP Server for Cloudflare Workers
 
-This example allows you to deploy a remote MCP server that doesn't require authentication on Cloudflare Workers. 
+This is a Cloudflare Workers implementation of the ModGov MCP server, which provides tools for interacting with ModernGov council APIs. It allows you to query council information, councillors, committees, meetings, and more from any council using the ModernGov system.
 
-## Get started: 
+## Features
 
-[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/ai/tree/main/demos/remote-mcp-authless)
+- **Council Search**: Find councils by name, region, or type using fuzzy matching
+- **Councillor Information**: Get councillor details by ward, ward ID, or postcode
+- **Committee Management**: List committees and their meetings
+- **Meeting Information**: Get meeting details, including dates, times, and locations
+- **Region-based Lookup**: Find all councils in a specific region
 
-This will deploy your MCP server to a URL like: `remote-mcp-server-authless.<your-account>.workers.dev/sse`
+## Available Tools
 
-Alternatively, you can use the command line below to get the remote MCP Server created on your local machine:
-```bash
-npm create cloudflare@latest -- my-mcp-server --template=cloudflare/ai/demos/remote-mcp-authless
-```
+- `find_council`: Find a council by name using fuzzy matching
+- `search_councils`: Search for councils with configurable confidence thresholds
+- `get_council_by_region`: Get all councils in a specific region
+- `get_councillors_by_ward`: Get councillors organized by ward
+- `get_councillors_by_ward_id`: Get councillors for a specific ward ID
+- `get_councillors_by_postcode`: Get councillors for a specific postcode
+- `get_committees`: Get all committees for a council
+- `get_meetings`: Get meetings for a specific committee
 
-## Customizing your MCP Server
+## Getting Started
 
-To add your own [tools](https://developers.cloudflare.com/agents/model-context-protocol/tools/) to the MCP server, define each tool inside the `init()` method of `src/index.ts` using `this.server.tool(...)`. 
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/modgov-mcp-cloudflare.git
+   cd modgov-mcp-cloudflare
+   ```
 
-## Connect to Cloudflare AI Playground
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can connect to your MCP server from the Cloudflare AI Playground, which is a remote MCP client:
+3. Run locally:
+   ```bash
+   npm run dev
+   ```
+
+4. Deploy to Cloudflare Workers:
+   ```bash
+   npm run deploy
+   ```
+
+## Configuration
+
+The server will be deployed to a URL like: `modgov-mcp.<your-account>.workers.dev`
+
+You can connect to it using any MCP client:
+
+### Cloudflare AI Playground
 
 1. Go to https://playground.ai.cloudflare.com/
-2. Enter your deployed MCP server URL (`remote-mcp-server-authless.<your-account>.workers.dev/sse`)
-3. You can now use your MCP tools directly from the playground!
+2. Enter your deployed MCP server URL (`modgov-mcp.<your-account>.workers.dev/sse`)
+3. You can now use the ModGov tools directly from the playground!
 
-## Connect Claude Desktop to your MCP server
+### Claude Desktop
 
-You can also connect to your remote MCP server from local MCP clients, by using the [mcp-remote proxy](https://www.npmjs.com/package/mcp-remote). 
-
-To connect to your MCP server from Claude Desktop, follow [Anthropic's Quickstart](https://modelcontextprotocol.io/quickstart/user) and within Claude Desktop go to Settings > Developer > Edit Config.
-
-Update with this configuration:
+1. Follow [Anthropic's Quickstart](https://modelcontextprotocol.io/quickstart/user)
+2. In Claude Desktop, go to Settings > Developer > Edit Config
+3. Update with this configuration:
 
 ```json
 {
   "mcpServers": {
-    "calculator": {
+    "modgov": {
       "command": "npx",
       "args": [
         "mcp-remote",
-        "http://localhost:8787/sse"  // or remote-mcp-server-authless.your-account.workers.dev/sse
+        "http://localhost:8787/sse"  // or modgov-mcp.your-account.workers.dev/sse
       ]
     }
   }
 }
 ```
 
-Restart Claude and you should see the tools become available. 
+## Example Usage
+
+Here are some example queries you can try:
+
+1. Find a council:
+   ```
+   Find information about Lichfield District Council
+   ```
+
+2. Get councillors by postcode:
+   ```
+   Who are the councillors for postcode WS13 6HX?
+   ```
+
+3. Get committee meetings:
+   ```
+   What meetings are scheduled for the Planning Committee at Leeds City Council?
+   ```
+
+4. Search by region:
+   ```
+   Show me all councils in the West Midlands
+   ```
+
+## Development
+
+To add new tools or modify existing ones, edit the `src/index.ts` file. The server uses:
+
+- `ModgovClient`: Handles API calls to ModernGov endpoints
+- `CouncilMatcher`: Provides fuzzy matching for council searches
+- `councils.json`: Contains the database of ModernGov councils
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+MIT License - see LICENSE file for details

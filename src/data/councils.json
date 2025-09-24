@@ -1,0 +1,291 @@
+{
+  "councils": [
+    {
+      "council": "Leeds City Council",
+      "url": "https://democracy.leeds.gov.uk/",
+      "region": "Yorkshire and Humber",
+      "type": "City Council"
+    },
+    {
+      "council": "City of York Council",
+      "url": "https://democracy.york.gov.uk/",
+      "region": "Yorkshire and Humber",
+      "type": "City Council"
+    },
+    {
+      "council": "Bristol City Council",
+      "url": "https://democracy.bristol.gov.uk/",
+      "region": "South West",
+      "type": "City Council"
+    },
+    {
+      "council": "Brighton & Hove City Council",
+      "url": "https://democracy.brighton-hove.gov.uk/",
+      "region": "South East",
+      "type": "City Council"
+    },
+    {
+      "council": "Cambridge City Council",
+      "url": "https://democracy.cambridge.gov.uk/",
+      "region": "East of England",
+      "type": "City Council"
+    },
+    {
+      "council": "Bath and North East Somerset Council",
+      "url": "https://democracy.bathnes.gov.uk/",
+      "region": "South West",
+      "type": "Unitary Authority"
+    },
+    {
+      "council": "Portsmouth City Council",
+      "url": "https://democracy.portsmouth.gov.uk/",
+      "region": "South East",
+      "type": "City Council"
+    },
+    {
+      "council": "Sheffield City Council",
+      "url": "https://democracy.sheffield.gov.uk/",
+      "region": "Yorkshire and Humber",
+      "type": "City Council"
+    },
+    {
+      "council": "Newcastle City Council",
+      "url": "https://democracy.newcastle.gov.uk/",
+      "region": "North East",
+      "type": "City Council"
+    },
+    {
+      "council": "London Borough of Tower Hamlets",
+      "url": "https://democracy.towerhamlets.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Camden",
+      "url": "https://camden.moderngov.co.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Brent",
+      "url": "https://democracy.brent.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Islington",
+      "url": "https://islington.moderngov.co.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Harrow",
+      "url": "https://moderngov.harrow.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Hounslow",
+      "url": "https://democraticservices.hounslow.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "Royal Borough of Kingston upon Thames",
+      "url": "https://kingston.moderngov.co.uk/",
+      "region": "London",
+      "type": "Royal Borough"
+    },
+    {
+      "council": "London Borough of Croydon",
+      "url": "https://croydon.moderngov.co.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Southwark",
+      "url": "https://moderngov.southwark.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Haringey",
+      "url": "https://www.minutes.haringey.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Havering",
+      "url": "https://democracy.havering.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Sutton",
+      "url": "https://moderngov.sutton.gov.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "London Borough of Barnet",
+      "url": "https://barnet.moderngov.co.uk/",
+      "region": "London",
+      "type": "London Borough"
+    },
+    {
+      "council": "Greater London Authority (GLA)",
+      "url": "https://gla.moderngov.co.uk/",
+      "region": "London",
+      "type": "Combined Authority"
+    },
+    {
+      "council": "Liverpool City Council",
+      "url": "https://councillors.liverpool.gov.uk/",
+      "region": "North West",
+      "type": "City Council"
+    },
+    {
+      "council": "City of Wolverhampton Council",
+      "url": "https://wolverhampton.moderngov.co.uk/",
+      "region": "West Midlands",
+      "type": "Metropolitan Borough"
+    },
+    {
+      "council": "Buckinghamshire Council",
+      "url": "https://buckinghamshire.moderngov.co.uk/",
+      "region": "East of England",
+      "type": "Unitary Authority"
+    },
+    {
+      "council": "Worcestershire County Council",
+      "url": "https://worcestershire.moderngov.co.uk/",
+      "region": "West Midlands",
+      "type": "County Council"
+    },
+    {
+      "council": "Warwickshire County Council",
+      "url": "https://warwickshire.moderngov.co.uk/",
+      "region": "West Midlands",
+      "type": "County Council"
+    },
+    {
+      "council": "South Cambridgeshire District Council",
+      "url": "https://scambs.moderngov.co.uk/",
+      "region": "East of England",
+      "type": "District Council"
+    },
+    {
+      "council": "Watford Borough Council",
+      "url": "https://watford.moderngov.co.uk/",
+      "region": "East of England",
+      "type": "Borough Council"
+    },
+    {
+      "council": "Three Rivers District Council",
+      "url": "https://moderngov.threerivers.gov.uk/",
+      "region": "East of England",
+      "type": "District Council"
+    },
+    {
+      "council": "City of Lincoln Council",
+      "url": "https://lincoln.moderngov.co.uk/",
+      "region": "East Midlands",
+      "type": "City Council"
+    },
+    {
+      "council": "Chichester District Council",
+      "url": "https://chichester.moderngov.co.uk/",
+      "region": "South East",
+      "type": "District Council"
+    },
+    {
+      "council": "East Hampshire District Council",
+      "url": "https://easthants.moderngov.co.uk/",
+      "region": "South East",
+      "type": "District Council"
+    },
+    {
+      "council": "Wirral Council",
+      "url": "https://wirral.moderngov.co.uk/",
+      "region": "North West",
+      "type": "Metropolitan Borough"
+    },
+    {
+      "council": "Cardiff Council",
+      "url": "https://cardiff.moderngov.co.uk/",
+      "region": "Wales",
+      "type": "Unitary Authority"
+    },
+    {
+      "council": "Vale of White Horse District Council",
+      "url": "https://democratic.whitehorsedc.gov.uk/",
+      "region": "South East",
+      "type": "District Council"
+    },
+    {
+      "council": "Coventry City Council",
+      "url": "https://edemocracy.coventry.gov.uk/",
+      "region": "West Midlands",
+      "type": "City Council"
+    },
+    {
+      "council": "West of England Combined Authority",
+      "url": "https://westofengland-ca.moderngov.co.uk/",
+      "region": "South West",
+      "type": "Combined Authority"
+    },
+    {
+      "council": "Lichfield District Council",
+      "url": "https://lichfield.moderngov.co.uk/",
+      "region": "West Midlands",
+      "type": "District Council"
+    },
+    {
+      "council": "Hastings Borough Council",
+      "url": "https://hastings.moderngov.co.uk/",
+      "region": "South East",
+      "type": "Borough Council"
+    },
+    {
+      "council": "Brentwood Borough Council",
+      "url": "https://brentwood.moderngov.co.uk/",
+      "region": "East of England",
+      "type": "Borough Council"
+    },
+    {
+      "council": "Leicestershire County Council",
+      "url": "https://democracy.leics.gov.uk/",
+      "region": "East Midlands",
+      "type": "County Council"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-09-11",
+    "totalCouncils": 45,
+    "regions": [
+      "West Midlands",
+      "London",
+      "North West",
+      "Wales",
+      "North East",
+      "South East",
+      "South West",
+      "East of England",
+      "East Midlands",
+      "Yorkshire and Humber",
+      "Scotland"
+    ],
+    "councilTypes": [
+      "City Council",
+      "District Council",
+      "London Borough",
+      "Combined Authority",
+      "Unitary Authority",
+      "Royal Borough",
+      "Borough Council",
+      "County Council",
+      "Metropolitan Borough",
+      "Council"
+    ]
+  }
+}
