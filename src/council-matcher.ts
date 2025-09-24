@@ -1,4 +1,4 @@
-import { levenshtein } from 'fast-levenshtein';
+import { get as levenshtein } from 'fast-levenshtein';
 import councils from './data/councils.json';
 
 export interface CouncilInfo {

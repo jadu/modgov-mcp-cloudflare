@@ -3,6 +3,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { ModgovClient } from "./modgov-client";
 import { CouncilMatcher } from "./council-matcher";
+import { DurableObject } from "cloudflare:workers";
 
 // Define our MCP agent with tools
 export class ModGovMCP extends McpAgent {
@@ -14,8 +15,8 @@ export class ModGovMCP extends McpAgent {
 	private modgovClient: ModgovClient;
 	private councilMatcher: CouncilMatcher;
 
-	constructor() {
-		super();
+	constructor(ctx: DurableObjectState, env: Env) {
+		super(ctx, env);
 		this.modgovClient = new ModgovClient();
 		this.councilMatcher = new CouncilMatcher();
 	}
